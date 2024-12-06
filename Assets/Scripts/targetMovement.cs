@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Events;
 
 public class targetMovement : MonoBehaviour {
     [SerializeField] AudioSource sound;
@@ -21,6 +19,7 @@ public class targetMovement : MonoBehaviour {
     }
 
     void Update() {
+        //Reset the current scene if the balloon scale goes over 5
         if(transform.localScale.x > 5 && transform.localScale.y > 5) {
             scoreController.ReloadScene();
         }
@@ -39,17 +38,16 @@ public class targetMovement : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        //Points awarded will be rounded to the nearest number
+        //Points awarded will be rounded to the nearest number with the help of +0.5f
         if(other.gameObject.CompareTag("pin")) {
             AudioSource.PlayClipAtPoint(sound.clip, transform.position);
             scoreController.AddPoints(Mathf.Floor(POINTAMT - transform.localScale.x + 0.5f));
-            scoreController.AdvanceNextLevel();
+            Destroy(gameObject,1f);
+            scoreController.DescreaseRemainingTarget();
         }
     }
 
     public void GrowInSize() {
         transform.localScale += new Vector3(0.3f ,0.3f ,0);
     }
-
-    
 }

@@ -10,7 +10,7 @@ public class bulletMovement : MonoBehaviour {
     private const float SPEED = 40;
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space) && pinPrefab.activeSelf) {
+        if(Input.GetKeyDown(KeyCode.Space)) {
             var pin = Instantiate(pinPrefab, player.transform.position, Quaternion.identity);
             rb = pin.GetComponent<Rigidbody2D>();
             rb.velocity = player.transform.up * SPEED;

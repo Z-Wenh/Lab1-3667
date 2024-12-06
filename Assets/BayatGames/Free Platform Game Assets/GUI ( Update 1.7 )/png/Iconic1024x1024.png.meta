@@ -93,11 +93,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Iconic1024x1024_0
+      name: Balloon
       rect:
         serializedVersion: 2
         x: 72
@@ -117,6 +130,195 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ButtonSetting
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6716caaebce2c6d408a9ea55d40a045b
+      internalID: 1256800011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonBack
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7030afd7e55745546bd9b9d0def13de9
+      internalID: 1003708753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonSound
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 924
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0991a6f97bf5c2f4385e1ad4eca50d79
+      internalID: -1539040798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonPause
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 554
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb6937c313689e41aa95c73079ee425
+      internalID: 2112005986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonHome
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 702
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd98811417112944808fc6e27f9a89d
+      internalID: -1464024172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonMenu
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 702
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5710a065b776fba4f8724633d0512758
+      internalID: 500948643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonPlay
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 850
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790c4c0f76533be4087123e836127c43
+      internalID: 1197744497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonExit
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 406
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07670a4d74eda314db7d08867f7c59c0
+      internalID: 734247804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonMusic
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 554
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce25b9d43c0b5e42b3f0c632e9890c5
+      internalID: -1413303902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,8 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Iconic1024x1024_0: -230021071
-      Iconic1024x1024_1: 1256800011
+      Balloon: -230021071
+      ButtonBack: 1003708753
+      ButtonExit: 734247804
+      ButtonHome: -1464024172
+      ButtonMenu: 500948643
+      ButtonMusic: -1413303902
+      ButtonPause: 2112005986
+      ButtonPlay: 1197744497
+      ButtonSetting: 1256800011
+      ButtonSound: -1539040798
       Iconic1024x1024_10: -1908218122
       Iconic1024x1024_100: -1625103946
       Iconic1024x1024_101: 1673861272
@@ -196,7 +406,6 @@ TextureImporter:
       Iconic1024x1024_17: -1609800170
       Iconic1024x1024_18: -1191888922
       Iconic1024x1024_19: 1803762297
-      Iconic1024x1024_2: 1003708753
       Iconic1024x1024_20: 81637988
       Iconic1024x1024_21: 514517582
       Iconic1024x1024_22: -218371073
@@ -207,7 +416,6 @@ TextureImporter:
       Iconic1024x1024_27: -2072013288
       Iconic1024x1024_28: -2002372722
       Iconic1024x1024_29: 1719368295
-      Iconic1024x1024_3: -1539040798
       Iconic1024x1024_30: 555453860
       Iconic1024x1024_31: 893598905
       Iconic1024x1024_32: 957949355
@@ -218,7 +426,6 @@ TextureImporter:
       Iconic1024x1024_37: 1382841575
       Iconic1024x1024_38: -663238878
       Iconic1024x1024_39: -716178835
-      Iconic1024x1024_4: 2112005986
       Iconic1024x1024_40: -1433154427
       Iconic1024x1024_41: 2138520759
       Iconic1024x1024_42: -360686105
@@ -229,7 +436,6 @@ TextureImporter:
       Iconic1024x1024_47: -257495236
       Iconic1024x1024_48: 477508644
       Iconic1024x1024_49: -1975158091
-      Iconic1024x1024_5: -1464024172
       Iconic1024x1024_50: -122935874
       Iconic1024x1024_51: -873768832
       Iconic1024x1024_52: -1281214167
@@ -240,7 +446,6 @@ TextureImporter:
       Iconic1024x1024_57: 425568235
       Iconic1024x1024_58: -80513278
       Iconic1024x1024_59: 1984779840
-      Iconic1024x1024_6: 500948643
       Iconic1024x1024_60: 1042099989
       Iconic1024x1024_61: 1424229300
       Iconic1024x1024_62: 1489506150
@@ -251,7 +456,6 @@ TextureImporter:
       Iconic1024x1024_67: -1918958099
       Iconic1024x1024_68: 466085503
       Iconic1024x1024_69: 716004731
-      Iconic1024x1024_7: 1197744497
       Iconic1024x1024_70: -1035336367
       Iconic1024x1024_71: 4881249
       Iconic1024x1024_72: 416243266
@@ -262,7 +466,6 @@ TextureImporter:
       Iconic1024x1024_77: -1174626103
       Iconic1024x1024_78: 265208860
       Iconic1024x1024_79: -2032164803
-      Iconic1024x1024_8: 734247804
       Iconic1024x1024_80: 870486287
       Iconic1024x1024_81: 224259641
       Iconic1024x1024_82: -1964514043

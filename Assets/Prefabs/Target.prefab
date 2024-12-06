@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.012295504, y: 0, z: 0, w: 0.9999244}
   m_LocalPosition: {x: -8.281717, y: 15.314917, z: 0.28739086}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b26e3711985ce14e91623276e1fa03d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 8477473756808949279}
+  sound: {fileID: 0}
   scoreController: {fileID: 0}
   direction: 1
 --- !u!50 &3892265833432099114
