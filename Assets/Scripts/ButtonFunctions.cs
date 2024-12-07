@@ -10,6 +10,7 @@ public class ButtonFunctions : MonoBehaviour {
     public void StartGame() {
         string name = playerNameInput.text;
         PersistentData.Instance.SetName(name);
+        PersistentData.Instance.SetScore(0);
         SceneManager.LoadScene("Stage1");
     }   
 
@@ -23,5 +24,9 @@ public class ButtonFunctions : MonoBehaviour {
 
     public void GoToScoreBoard() {
         SceneManager.LoadScene("EndScreen");
+    }
+
+    public void GoToSetting() {
+        SceneManager.LoadScene("SettingScreen");
     }
 }

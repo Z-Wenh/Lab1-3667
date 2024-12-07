@@ -191,7 +191,8 @@ MonoBehaviour:
 
 
     Objective:
-    Destroy the balloon floating in the air before they grow too big in size
+    Destroy the balloon floating in the air before they grow too big in size. Each
+    balloon will award you 10 points, decreasing as they grow in size.
 
 
     *Remember

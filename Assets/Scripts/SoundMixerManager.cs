@@ -11,8 +11,21 @@ public class SoundMixerManager : MonoBehaviour {
     [SerializeField] private Slider _musicSlider;
 
     void Start() {
-        _volumeSlider.value = PlayerPrefs.GetFloat("SoundEffect");
-        _musicSlider.value = PlayerPrefs.GetFloat("Music");
+        if(!PlayerPrefs.HasKey("SoundEffect")) {
+            PlayerPrefs.SetFloat("SoundEffect", -30);
+            LoadSound();
+        }
+        else {
+            LoadSound();
+        }
+        
+        if(!PlayerPrefs.HasKey("Music")) {
+            PlayerPrefs.SetFloat("Music", -30);
+            LoadMusic();
+        }
+        else {
+            LoadMusic();
+        }
     }
 
     public void SetSoundEffectVolume(float volumeLevel) {
@@ -20,8 +33,16 @@ public class SoundMixerManager : MonoBehaviour {
         PlayerPrefs.SetFloat("SoundEffect", volumeLevel);
     }
 
-    public  void SetMusisVolume(float volumeLevel) {
+    public void SetMusisVolume(float volumeLevel) {
         _audioMixer.SetFloat("Music", volumeLevel);
         PlayerPrefs.SetFloat("Music", volumeLevel);
+    }
+
+    public void LoadSound() {
+        _volumeSlider.value = PlayerPrefs.GetFloat("SoundEffect");
+    }
+
+    public void LoadMusic() {
+        _musicSlider.value = PlayerPrefs.GetFloat("Music");
     }
 }

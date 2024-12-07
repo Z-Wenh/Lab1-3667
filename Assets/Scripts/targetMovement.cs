@@ -10,8 +10,8 @@ public class targetMovement : MonoBehaviour {
     private const float MAXX = 51;
     private const float MINX = -42;
     [SerializeField] private int direction = 1;
+    [SerializeField] private const int POINTAMT = 10;
     private Vector3 movement;
-    private const int POINTAMT = 10;
 
     void Start() {
         InvokeRepeating("GrowInSize", 1.2f, 0.8f);

@@ -2665,8 +2665,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4911936083997337623, guid: b30542a7e553f5744a72e78f4f4207e1, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a3941896740a02141819df1bc22dcaa4, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -3398,6 +3398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d7600cda4e86241a11c1fd5ba9ca71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  musicClip: {fileID: 0}
   _popAudio: {fileID: 8154719052364329147, guid: 5621f9e61dc405648896a6dc2c9cd6d0, type: 3}
 --- !u!4 &1759080903
 Transform:
