@@ -47,6 +47,6 @@ public class targetMovement : MonoBehaviour {
     }
 
     public void GrowInSize() {
-        transform.localScale += new Vector3(0.3f ,0.3f ,0);
+        transform.localScale += new Vector3(0.35f ,0.35f ,0);
     }
 }
