@@ -12,10 +12,19 @@ public class movement : MonoBehaviour {
     [SerializeField] float jumpForce = 500.0f;
     [SerializeField] bool isGrounded = true;
 
+    [SerializeField]  Animator myAnimator;
+    const int IDLE = 0;
+    const int RUN = 1;
+    const int JUMP = 2;
+
     void Start() {
         if(rigid == null) {
             rigid = GetComponent<Rigidbody2D>();
         }
+        if(myAnimator == null) {
+            myAnimator = GetComponent<Animator>();
+        }
+        myAnimator.SetInteger("AnimationState", IDLE);
     }
 
     void Update() {
@@ -26,13 +35,13 @@ public class movement : MonoBehaviour {
 
     void FixedUpdate() {
         rigid.velocity = new Vector2(SPEED * moveInput, rigid.velocity.y);
+        //This will spawn the player on the opposite side of the ground if they went out of bounds
         if(transform.position.x < -52) {
             transform.position = new Vector3(56, transform.position.y, 0);
         }
         else if(transform.position.x > 62) {
             transform.position = new Vector3(-46, transform.position.y, 0);
         }
-
         if (moveInput < 0 && isFacingRight || moveInput > 0 && !isFacingRight) {
             Flip();
         }
@@ -40,8 +49,18 @@ public class movement : MonoBehaviour {
             Jump();
         }
         else {
-            jumpPressed = false; 
+            jumpPressed = false;
+            if(isGrounded) {
+                if (moveInput > 0 || moveInput < 0)
+                {
+                    myAnimator.SetInteger("AnimationState", RUN);
+                }
+                else {
+                    myAnimator.SetInteger("AnimationState", IDLE);
+                }
+            }
         }
+
     }
 
     private void Flip() {
@@ -50,6 +69,7 @@ public class movement : MonoBehaviour {
     }
 
     private void Jump() {
+        myAnimator.SetInteger("AnimationState", JUMP);
         rigid.velocity = new Vector2(rigid.velocity.x , 0);
         rigid.AddForce(new Vector2(0, jumpForce));
         jumpPressed = true;

@@ -13,10 +13,15 @@ public class ButtonFunctions : MonoBehaviour {
         SceneManager.LoadScene("Stage1");
     }   
 
+    public void GoToMenu() {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
     public void GoToInstruction() {
         SceneManager.LoadScene("InstructionScreen");
     }
-    public void GoToMenu() {
-        SceneManager.LoadScene("TitleScreen");
+
+    public void GoToScoreBoard() {
+        SceneManager.LoadScene("EndScreen");
     }
 }

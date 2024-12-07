@@ -190,9 +190,12 @@ MonoBehaviour:
     Shoot - Space bar to shoot out spikes
 
 
-
     Objective:
-    Destroy the balloon floating in the air before they grow too big in size'
+    Destroy the balloon floating in the air before they grow too big in size
+
+
+    *Remember
+    to write your name before starting the game*'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -728,7 +731,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 4
+  m_PixelsPerUnitMultiplier: 3
 --- !u!222 &1304146150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -773,8 +776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: 200}
-  m_SizeDelta: {x: 140, y: 120}
+  m_AnchoredPosition: {x: -290, y: 210}
+  m_SizeDelta: {x: 110, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843174115
 MonoBehaviour:

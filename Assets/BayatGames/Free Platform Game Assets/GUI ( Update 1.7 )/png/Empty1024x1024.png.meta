@@ -130,6 +130,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: LargePanel
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 574
+        width: 520
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 82, y: 35, z: 82, w: 33}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd656de7ea63e442bbd82a0af9a7261
+      internalID: 542750790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -142,6 +163,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ButtonPanel: 1313210668
+      LargePanel: 542750790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

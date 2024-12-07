@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class PersistentData : MonoBehaviour {
-    [SerializeField] float playerScore;
+    [SerializeField] int playerScore;
     [SerializeField] string playerName;
 
     public static PersistentData Instance;
@@ -25,7 +25,7 @@ public class PersistentData : MonoBehaviour {
     public void SetName(string name) {
         playerName = name;
     }
-    public void SetScore(float score) {
+    public void SetScore(int score) {
         playerScore = score;
     }
 
@@ -33,7 +33,7 @@ public class PersistentData : MonoBehaviour {
         return playerName;
     }
 
-    public float GetScore() {
+    public int GetScore() {
         return playerScore;
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1007695928836121084}
   - component: {fileID: 2966880094919350115}
   - component: {fileID: 5312287360542604415}
+  - component: {fileID: 411756297049431992}
   m_Layer: 0
   m_Name: Character
   m_TagString: player
@@ -192,4 +193,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5114323689627311866}
   pinPrefab: {fileID: 3487442883749512164, guid: ffaeb0487bf528f45be0e7ce74a7c1d8, type: 3}
-  hasShot: 0
+--- !u!95 &411756297049431992
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5114323689627311866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5972d6ff730ff934e836b19ed088f40e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

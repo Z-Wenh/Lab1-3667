@@ -9,8 +9,8 @@ public class ScoreController : MonoBehaviour {
     [SerializeField] TMP_Text scoreText;
     [SerializeField] private int _currentLevel;
     [SerializeField] private int _numTargetRemaining;
-    [SerializeField] private float _currentScore;
-    [SerializeField] private float _oldScore;
+    [SerializeField] private int _currentScore;
+    [SerializeField] private int _oldScore;
     private const float TIMEDURATION = 2;
     private float _timeElapsed;
 
@@ -32,7 +32,7 @@ public class ScoreController : MonoBehaviour {
             }
         }
     }
-    public void AddPoints(float points) {
+    public void AddPoints(int points) {
         _currentScore += points;
         PersistentData.Instance.SetScore(_currentScore);
         DisplayScore();

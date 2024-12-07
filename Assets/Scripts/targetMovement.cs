@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class targetMovement : MonoBehaviour {
-    [SerializeField] AudioSource sound;
     [SerializeField] ScoreController scoreController; 
+    [SerializeField] private AudioClip audioClip;
     private float xPosition = 40;
     private const float MAXX = 51;
     private const float MINX = -42;
@@ -15,7 +15,6 @@ public class targetMovement : MonoBehaviour {
 
     void Start() {
         InvokeRepeating("GrowInSize", 1.2f, 0.8f);
-        sound = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -40,8 +39,8 @@ public class targetMovement : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         //Points awarded will be rounded to the nearest number with the help of +0.5f
         if(other.gameObject.CompareTag("pin")) {
-            AudioSource.PlayClipAtPoint(sound.clip, transform.position);
-            scoreController.AddPoints(Mathf.Floor(POINTAMT - transform.localScale.x + 0.5f));
+            SoundManager.Instance.PlayBalloonPop(audioClip, transform, 1f);
+            scoreController.AddPoints((int)Mathf.Floor(POINTAMT - transform.localScale.x + 0.5f));
             Destroy(gameObject,1f);
             scoreController.DescreaseRemainingTarget();
         }
